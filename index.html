@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Layout com Flexbox</title>
+  <style>
+        body {
+      
+      background: url('Rio_Uruguai.JPG') no-repeat center center fixed;
+      background-size: cover;
+     
+      height: 100vh;
+      margin: 0;
+      color: #f0f815;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Peixes do Rio Uruguay</h1>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <h2 class="h2">3 Especies muito procuradas no Exterior:</h2>
+        <nav>
+            <ul>
+                <div id="sidebar">
+                    <a href="javascript:void(0)" onclick="mostrarConteudo('conteudo1')">Dourado (Salminus maxillosus)</a><br><br>
+                    <a href="javascript:void(0)" onclick="mostrarConteudo('conteudo2')">Pintado (Pseudoplatystoma corruscans)</a><br><br>
+                    <a href="javascript:void(0)" onclick="mostrarConteudo('conteudo3')">Bagre blindado(Hypostomus luteus)</a>
+                  </div>
+            </ul>
+          </nav>
+      </aside>
+
+      <main class="content">
+        <h2>Peixes Ornamentais</h2>
+       
+         <div id="content">
+            <div id="conteudo1"> 
+              <h2>Dourado (Salminus maxillosus)</h2>
+              
+              <p>O dourado (Salminus brasiliensis; antigamente Salminus maxillosus, também chamado de piraju, pirajuba e saijé) é um peixe dos rios do Brasil e outros países da América do Sul. Ocorre na Bacia do Prata, na bacia do Rio Magdalena e nos rios do Peru da bacia do rio Amazonas. </p>
+        
+               <p>Muito apreciado pelos pescadores esportivos, é lendário por sua bravura e resistência uma vez fisgado. Se o salmão é frequentemente citado como o alvo mais cobiçado da pescaria esportiva no hemisfério norte, na América do Sul impera o dourado. Aliás, o dourado, como indica seu nome científico (salminus = pequeno salmão), ocupa o mesmo nicho ecológico de trutas e salmões mesmo sendo de outra ordem (Characiformes), a qual fazem parte a piranha, o lambari, o tambaqui, o pacu, a traíra e o néon. O dourado, também chamado de pirajú e tigre de rio (por causa das listras na lateral do corpo) é um dos mais conhecidos predadores do rio Paraná. Ele está presente nas regiões Sul, Sudeste e Centro-oeste do Brasil, principalmente no Rio Doce, Rio Casca, Rio Paraná, Rio da Prata, Rio Paraguai e seus afluentes. Atinge grande porte, podendo alcançar 130cm de comprimento e pesar 25kg. É um peixe muito difícil de se manter no anzol, pois sua boca é muito dura, dificultando a penetração do anzol. Quando fisgado, salta para fora da água na expectativa de se livrar do anzol. Apresenta uma linda coloração amarelo ouro, com listras pretas nas laterais, as barbatanas emitem um efeito alaranjado, possui também um risco preto no meio da cauda. Tem dentes muito afiados e perigosos, são muito agressivos com outros peixes, principalmente quando estão se alimentando. Houve diversos relatos de ataques de dourado a seres humanos, inclusive um em que um garoto teve os genitais mutilados por esse peixe. </p>
+                
+                <p>Inúmeras empresas turísticas, especialmente na Argentina, Paraguai e no Brasil, oferecem pacotes turísticos a pescadores com o objetivo de pescar dourados na bacia do Rio Paraná.</p>
+            </div>
+        
+            <div id="conteudo2">
+              <h2>Pintado (Pseudoplatystoma corruscans)</h2>
+              <p>O peixe de água doce chamado Pintado é conhecido popularmente como Surubim-Caparari, Brutelo, Caparari e Moleque..</p>
+              <p>Sua espécie é distribuída em várias Bacias brasileiras, com maior importância no Pantanal e na Bacia do Rio São Francisco (Estados de Pernambuco, Bahia, Alagoas, Sergipe, São Paulo, Minas Gerais, Paraná e Rio Grande do Sul).</p>
+              <p>O Pintado habita calhas dos rios, embaixo de malhas de aguapés e camalotes e em bocas de corrichos. Tem o hábito noturno.</p>
+              <p>É um peixe carnívoro, alimentando-se principalmente da tuvira, minhocuçu e pequenos peixes. Pode ser utilizado no controle de população de tilápias em açudes e tanques.</p>
+              <p>É um peixe que realiza migrações de desova. Já se consegue a reprodução em laboratório, o que permite o desenvolvimento da espécie em piscicultura.</p>
+              <p>O Pintado é um peixe de couro, com coloração acinzentada e diversas pintas pretas cilíndricas pelo corpo. Já seu ventre tem uma coloração esbranquiçada. Seu corpo é alongado e roliço. Sua cabeça é grande e achatada, com dimensão entre 1/4 a 1/3 do tamanho do corpo. Apresenta longos barbilhões. Possui ferrões junto às nadadeiras laterais e dorsal. É apreciado por sua carne muito saborosa. Pode alcançar pesos próximos a 80 kg e quase 2 m de comprimento.</p>
+            </div>
+        
+            <div id="conteudo3" style="display: none;">
+              <h2>Hypostomus luteus</h2>
+              <p>Hypostomus luteus , também conhecido no comércio de animais de estimação como Golden Sailfin Pleco , é um bagre blindado do gênero Hypostomus da família Loricariidae . A espécie experimenta uma notável mudança trifásica em sua coloração à medida que envelhece. Ela cresce até um tamanho máximo de 45 cm (18 pol.).
+                É encontrada no norte da Argentina no Rio Uruguai . Vive em águas de correnteza rápida, onde se alimenta principalmente de algas.</p>
+              <p>Hypostomus Luteus passa por uma mudança significativa de cor à medida que envelhece. [2] Em sua primeira fase apresenta corpo marrom escuro a preto com manchas amarelas por todo o corpo. As barbatanas são amarelas. Na segunda fase o corpo fica com uma mistura de amarelo e preto. As manchas desaparecem e o amarelo começa a cobrir todo o corpo. Na terceira fase todo o corpo é dourado. Nem todos os Hypostomus Luteus atingem a coloração totalmente dourada e alguns exemplares até começam a perder a coloração dourada após atingir a terceira fase</p>
+              <p>A espécie é encontrada principalmente na bacia superior do Rio Uruguai , uma área que cobre aproximadamente o Uruguai e as regiões vizinhas do Brasil e da Argentina. Os afluentes do Rio Uruguai que a espécie habita incluem o Rio Canoas e o Rio Pelotas .</p>
+             
+            
+            </div>
+          </div>
+      </main>
+    </div>
+  </div>
+  
+
+
+
+
+  
+
+  <script>
+    function mostrarConteudo(idConteudo) {
+      
+      var conteudos = document.querySelectorAll('#content > div');
+      for (var i = 0; i < conteudos.length; i++) {
+        conteudos[i].style.display = 'none';
+      }
+
+      
+      document.getElementById(idConteudo).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
